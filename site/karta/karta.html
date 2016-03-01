@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/karta.css" type="text/css"/>
+    <title>Karta</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="headcontent">
+            <a href="../index/index.html"><div id="menubutton"></div></a>
+            <div class="buttons">
+                <nav>
+                    <ul>
+                        <li><a href="#">Start</a></li>
+                        <li><a href="#bottom">Kontakta oss </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="rubrik"><h2>KARTA</h2></div>
+        </div>
+    </div>
+<div id="map"></div>
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 57.70880, lng: 11.96680},
+            zoom: 19
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+
+    <footer>
+        <div class="footcontent">
+            <div class="priceclass">
+                <ul>
+                    <li>Prisklass 1: 15 kr/hg</li>
+                    <li class="middle">Prisklass 2: 25 kr/hg</li>
+                    <li>Prisklass 3: 35 kr/hg</li>
+                </ul>
+            </div>
+            <ul class="info" id="bottom">
+                <li>Adress: Blahagatan 42</li>
+                <li class="middle">Öppettider: mån - fre 5-10</li>
+                <li>Tel.nr: 073 - 4342531</li>
+
+            </ul>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
