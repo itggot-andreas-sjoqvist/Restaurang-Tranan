@@ -1,7 +1,6 @@
 html, body {
     height: 100%;
 
-
 }
 
 body {
@@ -16,20 +15,12 @@ body {
     width: 100%;
     background-color: transparent;
 
-
 }
 
 .header {
-    height:12vh;
+    height: 12vh;
     background: url('../img/header.jpg');
     box-shadow: 0 3px 1vh 0 black;
-}
-
-#menubutton  {
-    height: 0;
-    width: 0;
-    display: inline;
-    visibility: hidden;
 }
 
 .buttons ul {
@@ -43,7 +34,7 @@ body {
     float: left;
     height: 8vh;
     font-size: 20px;
-    background-color: rgba(123,104,238, 0.7);
+    background-color: rgba(123, 104, 238, 0.7);
     border-right: 1px solid black;
     margin-top: 2vh;
     box-shadow: 0 5px 8px 0 black;
@@ -59,7 +50,7 @@ body {
 }
 
 #rubrik h2 {
-    margin-left: 45%;
+    margin-left: 50%;
     display: block;
     padding-top: 3vh;
     margin-top: -2vh;
@@ -69,35 +60,41 @@ body {
     color: beige;
 }
 
+.cat {
+    visibility: hidden;
+}
+
 #map {
     height: 400px;
-    width: 400px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 14vh;
+    margin-top: 7vh;
+    border: 5px solid black;
+    box-shadow: 3px 5px 5px 0 black;
 
 }
 
 footer {
     height: 67px;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 
 }
+
 footer ul {
     display: block;
-    background-color: rgba(100,100,100,0.6);
+    background-color: rgba(100, 100, 100, 0.6);
     font-size: 20px;
     color: #fff;
     text-align: center;
 }
 
-
 footer li {
     display: inline-block;
 
-
 }
+
 footer li.middle {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -113,51 +110,47 @@ footer li.middle {
     }
 
     .header {
-        height:60px;
+        height: 60px;
 
     }
 
-    #menubutton {
-        height: 60px;
-        width: 60px;
+    .buttons ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+    }
+
+    .buttons li {
         float: left;
-        display: inline-block;
-        background: url("../img/menuButton.jpg");
+        height: 40px;
+        font-size: 12px;
+        margin-top: 10px;
+        background-color: rgba(123, 104, 238, 0.7);
+        border-right: 1px solid black;
+        box-shadow: 0 5px 8px 0 black;
+    }
+
+    .buttons li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 7px 8px;
+        text-decoration: none;
+        margin-top: 5px;
+
+    }
+
+    .cat a {
         visibility: visible;
-    }
-    #menubutton a {
-        height: 60px;
-        width: 60px;
-    }
-    .buttons {
-
-        margin: 0;
-        padding: 0;
-        height: 0;
-        width: 0;
-
-    }
-
-    .buttons ul li {
-
-        margin: 0;
-        padding: 0;
-        height: 0;
-        width: 0;
-
-    }
-    .buttons ul li a {
-        visibility: hidden;
-        margin: 0;
-        padding: 0;
-        height: 0;
-        width: 0;
+        color: white;
 
     }
 
     #map {
         margin-top: 30px;
         width: 100%;
+        border: 0;
 
     }
 }

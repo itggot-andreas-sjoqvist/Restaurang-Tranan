@@ -2,35 +2,26 @@
 html, body {
     height: 100%;
 
-
 }
 
 body {
     background: url("../img/wood-background-fixed.jpg") no-repeat;
     height: inherit;
 
-
-
 }
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     background-color: transparent;
 
-
 }
+
 .header {
-    height:12vh;
+    height: 12vh;
     background: url('../img/header.jpg');
     box-shadow: 0 3px 1vh 0 black;
-}
-
-#menubutton  {
-    height: 0;
-    width: 0;
-    display: inline;
-    visibility: hidden;
 }
 
 .buttons ul {
@@ -44,7 +35,7 @@ body {
     float: left;
     height: 8vh;
     font-size: 20px;
-    background-color: rgba(123,104,238, 0.7);
+    background-color: rgba(123, 104, 238, 0.7);
     border-right: 1px solid black;
     margin-top: 2vh;
     box-shadow: 0 5px 8px 0 black;
@@ -73,8 +64,9 @@ body {
 .content {
     height: inherit;
     width: inherit;
-    background-color: rgba(0,0,0,0.4);
-
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 
 }
 
@@ -82,7 +74,7 @@ body {
     width: 100%;
     height: 5vh;
     margin: 0;
-    
+
 }
 
 .cat h2 {
@@ -92,19 +84,21 @@ body {
     margin: 2vh 0 0 2vw;
 }
 
- .content a h3, p {
-     color: #000;
+.content a h3, p {
+    color: #000;
 }
+
 .offers {
     height: 36vh;
     width: 45%;
     display: inline-block;
     margin-left: 2vw;
-    box-shadow:  3px 5px 5px 0 black;
+    box-shadow: 3px 5px 5px 0 black;
     margin-top: 1.5vh;
     overflow: hidden;
     background: url("../img/MARBLE-BEIGE.jpg");
 }
+
 .produktbild {
     height: 15vh;
     width: 15vh;
@@ -116,15 +110,15 @@ body {
     margin-right: 2vw;
     margin-top: 9.5vh;
     float: left;
-    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .offers h3 {
     display: block;
     padding-left: 6px;
-    margin-top:4px;
-    margin-bottom:0;
-    background-color: rgba(123,104,238, 0.7);
+    margin-top: 4px;
+    margin-bottom: 0;
+    background-color: rgba(123, 104, 238, 0.7);
 }
 
 .offers h3:hover {
@@ -132,62 +126,59 @@ body {
     text-decoration: underline;
 }
 
- p.desc {
+p.desc {
     display: inline-block;
     padding-left: 3vw;
     max-width: 50%;
-     max-height: 72px;
-     font-size: 20px;
-
-
+    max-height: 72px;
+    font-size: 20px;
 
     /*@media fix*/
 
 }
 
+p.price {
+    font-size: 3vh;
+    max-width: 10vw;
+    display: block;
+    float: right;
+    margin: 3% 20vw 2vh auto;
 
- p.price {
-     font-size: 3vh;
-     max-width: 10vw;
-     display:block;
-     float:right;
-     margin: 3% 20vw 2vh auto;
-
- }
-
+}
 
 footer {
     height: 67px;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 
 }
+
 footer ul {
     display: block;
-    background-color: rgba(100,100,100,0.6);
+    background-color: rgba(100, 100, 100, 0.6);
     font-size: 20px;
     color: #fff;
     text-align: center;
 }
 
-
 footer li {
     display: inline-block;
-    
 
 }
+
 footer li.middle {
     margin-left: 5vw;
     margin-right: 5vw;
 }
+
 footer a {
     color: aqua;
 
 }
+
 footer a:hover {
     color: cadetblue;
 }
-
 
 @media (max-width: 600px) {
 
@@ -199,45 +190,34 @@ footer a:hover {
     }
 
     .header {
-        height:60px;
+        height: 60px;
 
     }
 
-    #menubutton {
-        height: 60px;
-        width: 60px;
+    .buttons ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+    }
+
+    .buttons li {
         float: left;
-        display: inline-block;
-        background: url("../img/menuButton.jpg");
-        visibility: visible;
-    }
-    #menubutton a {
-        height: 60px;
-        width: 60px;
-    }
-    .buttons {
-
-        margin: 0;
-        padding: 0;
-        height: 0;
-        width: 0;
-
+        height: 40px;
+        font-size: 12px;
+        margin-top: 10px;
+        background-color: rgba(123, 104, 238, 0.7);
+        border-right: 1px solid black;
+        box-shadow: 0 5px 8px 0 black;
     }
 
-    .buttons ul li {
-
-        margin: 0;
-        padding: 0;
-        height: 0;
-        width: 0;
-
-    }
-    .buttons ul li a {
-        visibility: hidden;
-        margin: 0;
-        padding: 0;
-        height: 0;
-        width: 0;
+    .buttons li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 7px 8px;
+        text-decoration: none;
+        margin-top: 5px;
 
     }
 
@@ -251,8 +231,8 @@ footer a:hover {
     }
 
     .offers {
-        width:inherit;
-        height:120px;
+        width: inherit;
+        height: 120px;
         margin-left: 3px;
         margin-right: 3px;
     }
@@ -265,6 +245,7 @@ footer a:hover {
         margin-top: 10px;
 
     }
+
     p.desc {
 
         max-width: 40%;
@@ -275,13 +256,13 @@ footer a:hover {
         /*@media fix*/
 
     }
+
     p.price {
         font-size: 20px;
         max-width: 30px;
-        display:block;
-        float:right;
+        display: block;
+        float: right;
         margin: 5px;
-
 
     }
 }

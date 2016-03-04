@@ -1,71 +1,86 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Utbud</title>
-    <link rel="stylesheet" href="../css/utbud.css" type="text/css"/>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("../includes/header.html");
+            $("#footer").load("../includes/footer.html");
+        });
+    </script>
+
 
 </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/utbud.css" type="text/css"/>
 <body>
 <div class="container">
     <div class="header">
-        <div class="headcontent">
-            <a href="../index/index.html"><div id="menubutton"></div></a>
-            <div class="buttons">
-                <nav>
-                    <ul>
-                        <li><a href="#">Start</a></li>
-                        <li><a href="#bottom">Kontakta oss </a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="rubrik"><h2>UTBUD</h2></div>
+
+        <div class="buttons">
+            <nav>
+                <ul>
+                    <li><a href="../index/index.html">Start</a></li>
+                    <li><a href="#bottom">Kontakta oss</a></li>
+                </ul>
+            </nav>
+
         </div>
+        <div id="rubrik"><h2>UTBUD</h2></div>
+
     </div>
     <div class="content">
         <div class="cat"><h2>POPULÄRT</h2></div>
-       <a href="../produktsida/produktsida.html"> <div class="offers" id="one"><div class="produktbild"></div><h3>Frukostpaket1</h3>
-            <p class="desc">This is tha sample sentence. Den modellen sålde under året mer än Volvo Cars prognos - totalt beställdes 88 000 bilar...
-            </p>
-            <p class="price">42 kr</p>
-        </div> </a>
-       <a href="../produktsida/produktsida.html"> <div class="offers" id="two"><div class="produktbild"></div><h3>Frukostpaket 2</h3>
-            <p class="desc">This is tha sample sentence. Maskulina mysterier råder det ingen brist på...</p>
-            <p class="price">42 kr</p>
-        </div> </a>
-       <a href="../produktsida/produktsida.html"> <div class="offers" id="three"><div class="produktbild"></div><h3>El Flingo Loco</h3>
-            <p class="desc">This is tha sample sentence. Makalösa makaker kammar sina barn med avföring...</p>
-            <p class="price">PK: 2</p>
-        </div> </a>
-       <a href="../produktsida/produktsida.html"> <div class="offers" id="four"><div class="produktbild"></div><h3>Glenn's special</h3>
-            <p class="desc">This is tha sample sentence. Mörkhyade människor existerear i plural, enligt sir Kosing von Sedelbergh...</p>
-            <p class="price">PK: 3</p>
-        </div> </a>
-    </div>
+        <a href="../produktsida/produktsida.html">
+            <div class="offers" id="one">
+                <div class="produktbild"></div>
+                <h3>Frukostpaket1</h3>
 
+                <p class="desc">This is tha sample sentence. Den modellen sålde under året mer än Volvo Cars prognos -
+                    totalt beställdes 88 000 bilar...
+                </p>
 
-        <footer>
-            <div class="footcontent">
-                <div class="priceclass">
-                    <ul>
-                        <li>Prisklass 1: 15 kr/hg</li>
-                        <li class="middle">Prisklass 2: 25 kr/hg</li>
-                        <li>Prisklass 3: 35 kr/hg</li>
-                    </ul>
-                </div>
-                <ul class="info" id="bottom">
-                    <li>Adress: <a href="../karta/karta.html">Blahagatan 42</a></li>
-                    <li class="middle">Öppettider: mån - fre 5-10</li>
-                    <li>Tel.nr: 073 - 4342531</li>
-
-                </ul>
+                <p class="price">42 kr</p>
             </div>
-        </footer>
+        </a>
+        <a href="../produktsida/produktsida.html">
+            <div class="offers" id="two">
+                <div class="produktbild"></div>
+                <h3>Frukostpaket 2</h3>
+
+                <p class="desc">This is tha sample sentence. Maskulina mysterier råder det ingen brist på...</p>
+
+                <p class="price">42 kr</p>
+            </div>
+        </a>
+        <a href="../produktsida/produktsida.html">
+            <div class="offers" id="three">
+                <div class="produktbild"></div>
+                <h3>El Flingo Loco</h3>
+
+                <p class="desc">This is tha sample sentence. Makalösa makaker kammar sina barn med avföring...</p>
+
+                <p class="price">PK: 2</p>
+            </div>
+        </a>
+        <a href="../produktsida/produktsida.html">
+            <div class="offers" id="four">
+                <div class="produktbild"></div>
+                <h3>Glenn's special</h3>
+
+                <p class="desc">This is tha sample sentence. Mörkhyade människor existerear i plural, enligt sir Kosing
+                    von Sedelbergh...</p>
+
+                <p class="price">PK: 3</p>
+            </div>
+        </a>
     </div>
 
+    <div id="footer"></div>
 
-
+</div>
 
 
 </body>

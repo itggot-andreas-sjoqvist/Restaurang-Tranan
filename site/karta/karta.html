@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+
+            $("#footer").load("../includes/footer.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/karta.css" type="text/css"/>
-    <title>Karta</title>
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <div class="headcontent">
-            <a href="../index/index.html"><div id="menubutton"></div></a>
-            <div class="buttons">
-                <nav>
-                    <ul>
-                        <li><a href="#">Start</a></li>
-                        <li><a href="#bottom">Kontakta oss </a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="rubrik"><h2>KARTA</h2></div>
-        </div>
-    </div>
-<div id="map"></div>
-<script>
-    function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-            center: {lat: 57.70880, lng: 11.96680},
-            zoom: 19
-        });
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
 
-    <footer>
-        <div class="footcontent">
-            <div class="priceclass">
+        <div class="buttons">
+            <nav>
                 <ul>
-                    <li>Prisklass 1: 15 kr/hg</li>
-                    <li class="middle">Prisklass 2: 25 kr/hg</li>
-                    <li>Prisklass 3: 35 kr/hg</li>
-                </ul>
-            </div>
-            <ul class="info" id="bottom">
-                <li>Adress: Blahagatan 42</li>
-                <li class="middle">Öppettider: mån - fre 5-10</li>
-                <li>Tel.nr: 073 - 4342531</li>
+                    <li><a href="../index/index.html">Start</a></li>
+                    <li><a href="#bottom">Kontakta oss</a></li>
+                    <li><a href="../utbud/utbud.html">Utbud</a></li>
 
-            </ul>
+                </ul>
+            </nav>
+            <div id="rubrik"><h2>Karta</h2></div>
         </div>
-    </footer>
+
+
     </div>
+
+    <div class="content">
+        <div class="cat"><a href="javascript:javascript:history.go(-1)"><p>Tillbaka</p></a></div>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 57.70880, lng: 11.96680},
+                    zoom: 18,
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                async defer></script>
+    </div>
+
+    <div id="footer"></div>
+
+</div>
 </body>
 </html>
