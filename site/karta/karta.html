@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+
+            $("#footer").load("../includes/footer.html");
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/karta.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+
+        <div class="buttons">
+            <nav>
+                <ul>
+                    <li><a href="../index/index.html">Start</a></li>
+                    <li><a href="#bottom">Kontakta oss</a></li>
+                    <li><a href="../utbud/utbud.html">Utbud</a></li>
+
+                </ul>
+            </nav>
+            <div id="rubrik"><h2>KARTA</h2></div>
+        </div>
+
+
+    </div>
+
+    <div class="content">
+        <div class="cat"><a href="javascript:javascript:history.go(-1)"><p>Tillbaka</p></a></div>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 57.70880, lng: 11.96680},
+                    zoom: 18,
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                async defer></script>
+    </div>
+
+    <div id="bottom">
+        <div id="footer"></div>
+    </div>
+
+</div>
+</body>
+</html>

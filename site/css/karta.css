@@ -1,0 +1,133 @@
+html, body {
+    height: 99%;
+
+}
+
+body {
+    background: url("../img/wood-background-fixed.jpg") no-repeat;
+    height: inherit;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.header {
+    height: 12vh;
+    background: url('../img/header.jpg');
+    box-shadow: 0 3px 1vh 0 black;
+}
+
+.buttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.buttons li {
+    float: left;
+    height: 8vh;
+    font-size: 20px;
+    background-color: rgba(123, 104, 238, 0.7);
+    border-right: 1px solid black;
+    margin-top: 2vh;
+    box-shadow: 0 5px 8px 0 black;
+}
+
+.buttons li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+#rubrik h2 {
+    margin-left: 47%;
+    display: block;
+    padding-top: 3vh;
+    margin-top: -2vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: beige;
+}
+
+.cat {
+    visibility: hidden;
+}
+
+#map {
+    height: 400px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+    border: 5px solid black;
+    box-shadow: 3px 5px 5px 0 black;
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 340px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        height: 60px;
+
+    }
+
+    .buttons ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+    }
+
+    .buttons li {
+        float: left;
+        height: 40px;
+        font-size: 12px;
+        margin-top: 10px;
+        background-color: rgba(123, 104, 238, 0.7);
+        border-right: 1px solid black;
+        box-shadow: 0 5px 8px 0 black;
+    }
+
+    .buttons li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 7px 8px;
+        text-decoration: none;
+        margin-top: 5px;
+
+    }
+
+    .cat a {
+        visibility: visible;
+        color: white;
+
+    }
+
+    #map {
+        margin-top: 30px;
+        width: 100%;
+        border: 0;
+
+    }
+}
