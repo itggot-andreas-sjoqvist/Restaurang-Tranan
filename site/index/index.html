@@ -1,13 +1,41 @@
-<<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("#footer").load("../includes/footer.html");
+        });
+    </script>
     <meta charset="UTF-8">
-    <title>Startsida</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/index.css" type="text/css"/>
 
 </head>
 <body>
-    <h1>Aa, här skulle en fräsig startida varit om Danny hade gjort en</h1>
-    <a href="../utbud/utbud.html"><button type="button">Gå till vårt utbud</button></a>
+<div class="container">
+    <div class="header">
+        <div class="buttons">
+            <nav>
+                <ul>
+                    <li><a href="../index/index.html">Start</a></li>
+                    <li><a href="#bottom">Kontakta oss </a></li>
+                </ul>
+            </nav>
+
+            <div id="rubrik"><h2>Restaurang Tranan</h2></div>
+        </div>
+    </div>
+    <a href="../utbud/utbud.html"><div class="start" id="start1"><h2>Produkter</h2></div></a>
+
+
+</div>
+
+<div id="bottom">
+    <div id="footer"></div>
+</div>
+
+
 
 </body>
 </html>
